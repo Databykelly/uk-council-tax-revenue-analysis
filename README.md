@@ -1,4 +1,4 @@
-![Council Tax Collection Analysis](images/council-tax-banner.png)
+![Council Tax Collection Analysis](images/council-tax-banner.png.png)
 # UK Council Tax Collection Analysis
 *Financial performance of English local authorities | 2021–22 to 2025–26*
 
