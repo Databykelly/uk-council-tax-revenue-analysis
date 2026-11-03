@@ -1,47 +1,54 @@
-# UK Council Tax Collection Performance Analysis
+![Council tax collection analysis cover](assets/council-tax-banner.svg)
 
-**Business question:** Which English local authorities face persistent council tax collection shortfalls, and where should finance teams focus their attention?
+# UK Council Tax Collection Analysis
+*Financial performance of English local authorities | 2021–22 to 2025–26*
 
-## The problem
+## Purpose
+To investigate how effectively English councils collect council tax, identify persistent shortfalls, and highlight where finance teams may need to take a closer look.
 
-Council tax helps fund local public services. But councils do not always collect everything owed within the financial year. For example, collecting £94 million against £100 million due leaves a £6 million **in-year collection shortfall**. Some of that money may be recovered later.
+## The Business Task
+**Which councils consistently collect less council tax than expected, how has this changed over five years, and where should revenue managers focus their attention?**
 
-Finance managers need to know **where collection performance is deteriorating**, whether the problem persists, and which authorities merit further investigation. This project uses five financial years of official statistics (2021–22 to 2025–26) to answer those questions.
+This case study uses official data to answer that question and communicate the results through financial analysis and a Power BI dashboard.
 
-## What we'll investigate
+**Audience:** Council finance directors, revenue managers and FP&A teams.  
+**Tools:** Python · SQL · Power BI  
+**Data:** [MHCLG Council Tax Statistics](https://www.gov.uk/government/collections/council-tax-statistics)
 
-| Business question | Measure |
-| --- | --- |
-| How much is collected? | Council tax due and in-year receipts |
-| Where are shortfalls greatest? | Amount and percentage uncollected |
-| Is performance improving? | Year-on-year collection-rate changes |
-| Which councils lag consistently? | Collection rates below the annual national median for **three consecutive comparable years** |
-| What remains outstanding? | Year-end council tax arrears, where comparable |
+## STEP 1: COLLECT DATA
+Obtain council tax collection data for five financial years (2021–22 to 2025–26). Document the source files and publication dates.
 
-**Core metrics:** In-year collection rate = receipts for the year's liability ÷ net collectable debit × 100. In-year shortfall = net collectable debit − receipts for that year's liability.
+**Status:** Not started — source files and collection code will be linked here.
 
-## Approach and deliverables
+## STEP 2: CLEAN AND COMBINE DATA
+Use Python to check missing values, standardise columns, reconcile council names and boundary changes, and create one analysis-ready dataset.
 
-Using **Python**, we'll collect, clean and validate the data; **SQL** will support trends and benchmarking; and **Power BI** will turn the findings into a management dashboard. The final deliverables will include reproducible scripts, a cleaned dataset, financial comparisons, a dashboard and a short executive summary.
+**Status:** Not started — cleaning scripts and validation checks will be linked here.
 
-**Audience:** Council finance directors, revenue managers and FP&A teams.
+## STEP 3: ANALYSE COLLECTION PERFORMANCE
+Use SQL to calculate and compare:
+- **In-year collection rate:** Amount collected for the year's liability ÷ net collectable debit × 100
+- **In-year shortfall:** Net collectable debit − amount collected for the year's liability
+- **Persistent underperformance:** Below the national median collection rate for three consecutive *comparable* years
 
-**Source:** [MHCLG council tax statistics](https://www.gov.uk/government/collections/council-tax-statistics).
+Examine year-on-year trends and arrears separately from in-year shortfalls.
 
-## Progress
+**Status:** Not started — SQL queries and results will be added here.
 
-- [ ] Obtain and validate five annual datasets
-- [ ] Clean and reconcile authority identifiers (Python)
-- [ ] Analyse collection performance (SQL)
-- [ ] Build and validate the dashboard (Power BI)
-- [ ] Publish key findings and recommendations
+## STEP 4: VISUALISE AND REPORT
+Build a Power BI dashboard showing collection rates, shortfalls and performance by council. Summarise the main findings and implications for revenue management.
 
-**Headline findings:** To be added after analysis.
+**Headline finding:** Coming soon.  
+**Dashboard:** Coming soon.
 
-### Important limitations
+## Project Progress
+- [ ] Data collected and checked
+- [ ] Python cleaning completed
+- [ ] SQL analysis completed
+- [ ] Power BI dashboard published
+- [ ] Findings and recommendations documented
 
-Council reorganisations (including Northamptonshire, Cumbria, North Yorkshire and Somerset) affect comparisons over time. We'll flag or adjust breaks in authority boundaries rather than treat them as real performance changes. In-year shortfalls differ from total arrears, and a low collection rate **does not by itself prove financial distress**. We'll document source revisions and any provisional figures.
+> **Limitations:** Council reorganisations (including Northamptonshire, Cumbria, North Yorkshire and Somerset) affect comparisons between years. We'll flag boundary changes and document revisions or provisional data. A collection shortfall does not, on its own, mean a council is in financial distress.
 
 ---
-
-**[DataByKelly](https://github.com/Databykelly)** · Financial Analytics | Business Intelligence | Decision Support
+**[DataByKelly](https://github.com/Databykelly)** · Financial Analytics | Business Intelligence
