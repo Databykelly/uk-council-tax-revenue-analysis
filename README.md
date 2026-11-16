@@ -10,7 +10,7 @@ To investigate how effectively English councils collect council tax, identify pe
 
 This case study uses official collection statistics to compare council performance over five years.
 
-**Primary Audience:** Council finance directors, revenue managers and financial planning teams (FP&A) 
+**Primary Audience:** Council finance directors, revenue managers and financial planning teams (FP&A)   
 **Also written for:** Anyone interested in how well councils collect council tax. Findings are explained in plain English, with no technical background needed.Council finance directors, revenue managers and FP&A teams.  
 **Tools:** Python · SQL · Power BI  
 **Data source:** Ministry of Housing, Communities and Local Government (MHCLG) Council Tax Statistics, licensed under the Open Government Licence v3.0. [MHCLG Council Tax Statistics](https://www.gov.uk/government/collections/council-tax-statistics)
