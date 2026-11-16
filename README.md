@@ -20,7 +20,7 @@ I downloaded three spreadsheets from GOV.UK and checked that they covered all fi
 
 ## STEP 2: CLEAN AND COMBINE DATA
 
-Reshaped the source tables into **1,506 council-year records**. Compared the overlapping 2022–23 releases by ONS code, retained one copy and excluded 17 placeholder rows for reorganised authorities in 2023–24. Checked that each ONS code and financial year pair was unique.
+I combined the three spreadsheets into one table, with one row for each council in each financial year. Two spreadsheets included figures for 2022–23, so I checked that the figures matched and kept one copy. I left out 17 rows with no collection figures for 2023–24 after some councils were reorganised. I then checked that no council appeared twice in the same year. The final table had 1,506 rows.
 
 [Cleaned CSV](data/processed/council_tax_2021-22_to_2025-26.csv) · [Python preparation script](python/prepare_data.py)
 
