@@ -35,8 +35,6 @@ I used Python’s `pandas` library with `odfpy` to open the spreadsheets. In `pa
 
 ## Run the project
 
-1. From the repository root, run `python -m pip install -r requirements.txt` and `python python/prepare_data.py` to rebuild the CSV.
-2. In MySQL 8+, create or select a schema using UTF-8 (`utf8mb4`). Run the `CREATE TABLE` statement in [01_validate.sql](sql/01_validate.sql).
-3. In MySQL Workbench, use **Table Data Import Wizard** to load the CSV into the existing `council_tax` table. The CSV columns follow the table's order. Run the validation queries, then [02_collection_performance.sql](sql/02_collection_performance.sql).
+See the [Project Notes](Notes.md) for step-by-step instructions to run the Python script and rebuild the cleaned CSV.
 
 Contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
