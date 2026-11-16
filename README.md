@@ -16,11 +16,13 @@ This case study uses official collection statistics to compare council performan
 
 ## STEP 1: COLLECT DATA
 
-I downloaded three spreadsheets from GOV.UK and checked that they covered all five years. [2022–23 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2022-to-2023) · [2023–24 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2023-to-2024) · [2025–26 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2025-to-2026)
+I used Python’s `requests` library to download three official GOV.UK spreadsheets. I used `pathlib` to set up the project folder and `shutil` to save copies of the original files in Google Drive. Together, the three files covered all five financial years, from 2021–22 to 2025–26.
+
+[2022–23 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2022-to-2023) · [2023–24 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2023-to-2024) · [2025–26 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2025-to-2026)
 
 ## STEP 2: CLEAN AND COMBINE DATA
 
-I combined the three spreadsheets into one table, with one row for each council in each financial year. Two spreadsheets included figures for 2022–23, so I checked that the figures matched and kept one copy. I left out 17 rows with no collection figures for 2023–24 after some councils were reorganised. I then checked that no council appeared twice in the same year. The final table had 1,506 rows.
+I used Python’s `pandas` library with `odfpy` to open the spreadsheets. In `pandas`, I combined the figures into one table with one row per council per financial year. I checked that the figures for 2022–23 matched across the two files and kept one copy. I left out 17 rows with no figures for 2023–24 after some councils were reorganised, then checked that no council appeared twice in the same year. I calculated how much council tax was still uncollected at year-end and saved the finished table as a CSV with **1,506 rows and 10 columns**.
 
 [Cleaned CSV](data/processed/council_tax_2021-22_to_2025-26.csv) · [Python preparation script](python/prepare_data.py)
 
