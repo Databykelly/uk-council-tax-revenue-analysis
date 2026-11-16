@@ -26,16 +26,9 @@ I combined the three spreadsheets into one table, with one row for each council 
 
 ## STEP 3: ANALYSE COLLECTION PERFORMANCE
 
-**Started.** The SQL checks cover data quality, the England trend, Liverpool versus Manchester, and authorities below the annual council median for three consecutive years. Compare councils across years on consistent boundaries.
+**Next step.** I will use SQL to analyse the cleaned CSV and answer this business question:
 
-- **Collection rate (%)** = amount received for that year by 31 March ÷ net collectable debit × 100.
-- **In-year shortfall (£)** = net collectable debit − amount received for that year by 31 March. Councils can recover some of this balance later.
-
-[Liverpool's collection rate rose from 83.91% to 86.85%, while its year-end shortfall increased from £40.08m to £42.32m](sql/02_collection_performance.sql). The amount due grew over the same period.
-
-## STEP 4: VISUALISE AND REPORT
-
-Built exploratory Python charts for Liverpool, England and Manchester. The interactive Power BI report is planned.
+**Which councils consistently collect less council tax than expected, how has this changed over five years, and where should revenue managers focus their attention?**
 
 ## Run the project
 
