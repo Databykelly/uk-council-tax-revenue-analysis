@@ -12,7 +12,7 @@ This case study uses official collection statistics to compare council performan
 
 **Audience:** Council finance directors, revenue managers and FP&A teams.  
 **Tools:** Python · SQL · Power BI  
-**Data source:** Ministry of Housing, Communities and Local Government (MHCLG) Council Tax Statistics, licensed under the Open Government Licence v3.0.[MHCLG Council Tax Statistics](https://www.gov.uk/government/collections/council-tax-statistics)
+**Data source:** Ministry of Housing, Communities and Local Government (MHCLG) Council Tax Statistics, licensed under the Open Government Licence v3.0. [MHCLG Council Tax Statistics](https://www.gov.uk/government/collections/council-tax-statistics)
 
 ## STEP 1: COLLECT DATA
 
