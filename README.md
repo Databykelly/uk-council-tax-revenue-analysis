@@ -16,7 +16,7 @@ This case study uses official collection statistics to compare council performan
 
 ## STEP 1: COLLECT DATA
 
-Downloaded and inspected three revised GOV.UK Table 6 workbooks covering five financial years. [2022–23 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2022-to-2023) · [2023–24 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2023-to-2024) · [2025–26 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2025-to-2026)
+I downloaded three spreadsheets from GOV.UK and checked that they covered all five years. [2022–23 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2022-to-2023) · [2023–24 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2023-to-2024) · [2025–26 release](https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2025-to-2026)
 
 ## STEP 2: CLEAN AND COMBINE DATA
 
